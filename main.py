@@ -1,7 +1,7 @@
 import random
 
 n = random.randint(1, 10)
-count = 0   # this is used to tell the player how many times it took them to guess the correct number
+count = 1   # this is used to tell the player how many times it took them to guess the correct number
 introduction = ('Hi there', 'Welcome', 'Hey')
 greeting = random.choice(introduction)
 
@@ -21,7 +21,7 @@ while True:
 
     if guesses == n:
         print('Good job! You guessed correctly!')
-        break
+        break # this terminates the current loop
 
     elif guesses < n:
         print('Oops! You guessed too low. Try again!')
